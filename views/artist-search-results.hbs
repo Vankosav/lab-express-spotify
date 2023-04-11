@@ -1,9 +1,15 @@
 {{#each artists}}
-    <h2>{{this.name}}</h2>
-    <p>{{this.bio}}</p>
+<div class="artists">
+    
 
     {{#if this.images}}
    <img src="{{this.images.[0].url}}" alt="" width="300"/>
+   
    {{/if}}
-   <button><a href="/albums/{{this.id}}">View Albums</a></button>
+   <div class="intro">
+   <h2>{{this.name}}</h2>
+   
+   <button class="artists-button"><a href="/albums/{{this.id}}">View Albums</a></button>
+   </div>
+   </div>
 {{/each}}

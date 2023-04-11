@@ -1,0 +1,71 @@
+body {
+    margin:0px;
+    padding: 0px;
+}
+
+.first-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/images/spotify-background.jpeg");
+  background-position: absolute;
+  background-size: cover;
+}
+
+.search-box {
+    width: 400px;
+    height: 30px
+}
+
+.first-button {
+    margin-left: 140px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.artists {
+    margin-top: 50px;
+   margin-left: 80px;
+   padding: 20px;
+   width: 300px;
+   display: inline-flex;
+   flex-direction: column;
+}
+
+.artists img {
+    width: 300px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+
+}
+
+.intro h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+}
+
+.artists-button {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: red;
+    border: none;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.artists-button a {
+    color: white;
+  text-decoration: none;
+}
