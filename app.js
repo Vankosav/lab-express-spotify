@@ -35,15 +35,16 @@ app.get("/", (req, res) => {
 app.get("/artist-search", (req, res) => {
     
     const artista = req.query.artist;
+  
 
     spotifyApi.searchArtists(artista)
     .then(data => {
-    
+     
         const results = {
             artists: data.body.artists.items
         }
          res.render('artist-search-results.hbs', results )
-        
+         console.log(results);
       })
       .catch(err => console.log('The error while searching artists occurred: ', err));
     
@@ -78,4 +79,4 @@ app.get("/artist-search", (req, res) => {
 
     
       
-app.listen(4000, () => console.log('My Spotify project running on port 3000 🎧 🥁 🎸 🔊'));
+app.listen(4000, () => console.log('My Spotify project running on port 4000 🎧 🥁 🎸 🔊'));

@@ -1,8 +1,14 @@
+<h1>Albums for: </h1>
+
 {{#each albums}}
+
+
 {{#if this.images}}
 <img src="{{this.images.[0].url}}" alt="{{this.name}} image"/>
 {{/if}}
 <h2>{{this.name}}</h2>
 <p>{{this.release_date}}</p>
-<a href="/tracks/{{this.id}}">View tracks</a>
+<button class="artists-button"><a href="/tracks/{{this.id}}">View tracks</a></button>
+
+
 {{/each}}
