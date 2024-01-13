@@ -2,10 +2,13 @@
   <h2>{{this.name}}</h2>
   {{#each this.artists}}
     <h2>{{this.name}}</h2>
+      {{/each}}
     {{#if this.preview_url}}
-      <audio controls src="{{this.preview_url}}"></audio>
+      <audio controls>
+        <source src="{{this.preview_url}}">
+        </audio>
     {{else}}
       <p>No preview available for this track.</p>
     {{/if}}
-  {{/each}}
+
 {{/each}}
